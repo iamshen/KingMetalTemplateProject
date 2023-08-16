@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\Domain\KingMetalTemplateProject.Domain.Interfaces\KingMetalTemplateProject.Domain.Interfaces.csproj" />
+      <ProjectReference Include="..\..\Infrastructure\KingMetalTemplateProject.Infrastructure.Database\KingMetalTemplateProject.Infrastructure.Database.csproj" />
+      <ProjectReference Include="..\..\Infrastructure\KingMetalTemplateProject.Infrastructure.Shared\KingMetalTemplateProject.Infrastructure.Shared.csproj" />
+    </ItemGroup>
+
+</Project>

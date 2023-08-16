@@ -1,0 +1,31 @@
+<Project>
+	<PropertyGroup>
+		<LangVersion>latest</LangVersion>
+		<TargetFramework>net7.0</TargetFramework>
+		<NoWarn>NU1803;NU1507;1701;1702;1591;8002</NoWarn>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+		<Authors>NoBody</Authors>
+		<Company>Nobody Nobody But You</Company>
+		<NeutralLanguage>zh-CHS</NeutralLanguage>
+		<PackageLicenseExpression> MIT </PackageLicenseExpression>
+		<PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+		<PackageProjectUrl>https://github.com/iamshen/Hs.TemplateProject</PackageProjectUrl>
+		<PackageReleaseNotes>https://github.com/iamshen/Hs.TemplateProject/blob/master/CHANGELOG.md</PackageReleaseNotes>
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
+		
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+		<DocumentationFile>bin\Debug\$(MSBuildProjectName).xml</DocumentationFile>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+		<DocumentationFile>bin\Release\$(MSBuildProjectName).xml</DocumentationFile>
+	</PropertyGroup>
+
+</Project>

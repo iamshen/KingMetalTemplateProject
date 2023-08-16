@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<ItemGroup>
+		<PackageReference Include="KingMetal.Domains.Abstractions" />
+		<PackageReference Include="Microsoft.Orleans.CodeGenerator.MSBuild">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="Commands\" />
+	  <Folder Include="Domain\" />
+	  <Folder Include="Events\" />
+	  <Folder Include="Handler\" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\..\Infrastructure\KingMetalTemplateProject.Infrastructure.Shared\KingMetalTemplateProject.Infrastructure.Shared.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Orleans_CodeGenInputs Remove="Repository\ICompanyRepository.cs" />
+	</ItemGroup>
+
+</Project>

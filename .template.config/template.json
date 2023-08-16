@@ -1,0 +1,93 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "huangs",
+  "classifications": [
+    "Olreans",
+    "KingMetal"
+  ],
+  "name": "Olreans Project",
+  "description": "This is a Olreans Template Project From KingMetal.",
+  "identity": "Olreans.KingMetal.Solution.CSharp",
+  "groupIdentity": "Olreans.KingMetal.Solution",
+  "shortName": "king-sln",
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  },
+  "sourceName": "KingMetalTemplateProject",
+  "preferNameDirectory": true,
+  "sources": [
+    {
+      "source": "./",
+      "target": "./",
+      "exclude": [
+        "README.md",
+        "**/[Bb]in/**",
+        "**/[Oo]bj/**",
+        ".template.config/**/*",
+        ".vs/**/*",
+        "**/*.filelist",
+        "**/*.user",
+        "**/*.lock.json",
+        "**/.git/**",
+        "*.nuspec",
+        "**/node_modules/**"
+      ]
+    }
+  ],
+  "symbols": {
+    "dbTPrefix": {
+      "type": "parameter",
+      "replaces": "TempDbTablePrefix",
+      "isRequired": true,
+      "description": "The prefix of DataBase table(for example: “gi_”)."
+    },
+    "connectionString": {
+      "type": "parameter",
+      "replaces": "TempConnectionString",
+      "isRequired": true,
+      "description": "The ConnectionString of DataBase."
+    },
+    "appName": {
+      "type": "parameter",
+      "replaces": "TempAppName",
+      "isRequired": true,
+      "description": "The short name of application(for example: “crm、order、cart...”)."
+    }
+  },
+  "primaryOutputs": [
+    {
+      "path": "src/Domain/KingMetalTemplateProject.Domain/KingMetalTemplateProject.Domain.csproj"
+    },
+    {
+      "path": "src/Domain/KingMetalTemplateProject.Domain.Interfaces/KingMetalTemplateProject.Domain.Interfaces.csproj"
+    },
+    {
+      "path": "src/Infrastructure/KingMetalTemplateProject.Infrastructure.Database/KingMetalTemplateProject.Infrastructure.Database.csproj"
+    },
+    {
+      "path": "src/Infrastructure/KingMetalTemplateProject.Infrastructure.Domain/KingMetalTemplateProject.Infrastructure.Domain.csproj"
+    },
+    {
+      "path": "src/Infrastructure/KingMetalTemplateProject.Infrastructure.Shared/KingMetalTemplateProject.Infrastructure.Shared.csproj"
+    },
+    {
+      "path": "src/Presentation/KingMetalTemplateProject.Presentation.Api/KingMetalTemplateProject.Presentation.Api.csproj"
+    },
+    {
+      "path": "src/Presentation/KingMetalTemplateProject.Presentation.Host/KingMetalTemplateProject.Presentation.Host.csproj"
+    }
+  ],
+  "postActions": [
+    {
+      "description": "Restore NuGet packages required by this project.",
+      "manualInstructions": [
+        {
+          "text": "Run 'dotnet restore'"
+        }
+      ],
+      "actionId": "210D431B-A78B-4D2F-B762-4ED3E3EA9025",
+      "continueOnError": true
+    }
+  ]
+}

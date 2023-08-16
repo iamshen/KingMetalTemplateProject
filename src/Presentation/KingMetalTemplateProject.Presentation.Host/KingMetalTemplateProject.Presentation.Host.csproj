@@ -1,0 +1,46 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>Exe</OutputType>
+		<EnforceCodeStyleInBuild>False</EnforceCodeStyleInBuild>
+		<NeutralLanguage>zh-Hans</NeutralLanguage>
+	</PropertyGroup>
+
+
+	<ItemGroup>
+		<PackageReference Include="GoldCloud.Infrastructure.Configuration" />
+		<PackageReference Include="GoldCloud.Infrastructure.HostExtensions" />
+		<PackageReference Include="KingMetal.Infrastructures.NLog" />
+		<PackageReference Include="KingMetal.Infrastructures.NLogKingMetalRenderer" />
+		<PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" />
+		<PackageReference Include="Microsoft.Orleans.CodeGenerator.MSBuild">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="KingMetal.Domains.AuditingService" />
+		<PackageReference Include="KingMetal.Domains.Abstractions" />
+		<PackageReference Include="KingMetal.MessageBus.RabbitMQ" />
+		<PackageReference Include="KingMetal.Storage.PostgreSQL" />
+		<PackageReference Include="KingMetal.Domains.UniqueIdService" />
+		<PackageReference Include="KingMetal.Domains.UniqueValueService" />
+		<PackageReference Include="KingMetal.Domains.TransactionService" />
+		<PackageReference Include="Microsoft.Extensions.Hosting" />
+		<PackageReference Include="Microsoft.Extensions.Http" />
+		<PackageReference Include="Microsoft.Orleans.OrleansRuntime" />
+		<PackageReference Include="Microsoft.Orleans.OrleansTelemetryConsumers.Counters" />
+		<PackageReference Include="OrleansDashboard" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\..\Domain\KingMetalTemplateProject.Domain\KingMetalTemplateProject.Domain.csproj" />
+	  <ProjectReference Include="..\..\Infrastructure\KingMetalTemplateProject.Infrastructure.Database\KingMetalTemplateProject.Infrastructure.Database.csproj" />
+	  <ProjectReference Include="..\..\Infrastructure\KingMetalTemplateProject.Infrastructure.HttpService\KingMetalTemplateProject.Infrastructure.HttpService.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Update="appsettings.json">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </None>
+	</ItemGroup>
+
+</Project>

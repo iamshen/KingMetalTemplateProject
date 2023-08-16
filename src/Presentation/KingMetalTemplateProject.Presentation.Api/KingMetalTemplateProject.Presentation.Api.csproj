@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<ItemGroup>
+		<Folder Include="Controllers\" />
+	</ItemGroup>
+	
+	<ItemGroup>
+		<PackageReference Include="GoldCloud.Infrastructure.WebBase" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\..\Application\KingMetalTemplateProject.Application\KingMetalTemplateProject.Application.csproj" />
+		<ProjectReference Include="..\..\Domain\KingMetalTemplateProject.Domain.Interfaces\KingMetalTemplateProject.Domain.Interfaces.csproj" />
+		<ProjectReference Include="..\..\Infrastructure\KingMetalTemplateProject.Infrastructure.Database\KingMetalTemplateProject.Infrastructure.Database.csproj" />
+		<ProjectReference Include="..\..\Infrastructure\KingMetalTemplateProject.Infrastructure.HttpService\KingMetalTemplateProject.Infrastructure.HttpService.csproj" />
+	</ItemGroup>
+
+</Project>

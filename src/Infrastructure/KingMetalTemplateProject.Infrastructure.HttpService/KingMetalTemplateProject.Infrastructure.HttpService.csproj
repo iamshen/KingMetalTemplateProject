@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <ItemGroup>
+        <PackageReference Include="HttpTracer" />
+        <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" />
+        <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" />
+        <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" />
+        <PackageReference Include="Microsoft.Extensions.Http.Polly" />
+        <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" />
+        <PackageReference Include="Refit" />
+        <PackageReference Include="Refit.HttpClientFactory" />
+       
+    </ItemGroup>
+    <ItemGroup>
+      <ProjectReference Include="..\KingMetalTemplateProject.Infrastructure.Shared\KingMetalTemplateProject.Infrastructure.Shared.csproj" />
+    </ItemGroup>
+    <ItemGroup>
+      <PackageVersion Update="Microsoft.Extensions.Hosting.Abstractions" Version="7.0.0" />
+    </ItemGroup>
+</Project>

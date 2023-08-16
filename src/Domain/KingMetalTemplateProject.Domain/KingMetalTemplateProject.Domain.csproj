@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<ItemGroup>
+		<PackageReference Include="KingMetal.Domains.Core" />
+		<PackageReference Include="Microsoft.Orleans.CodeGenerator.MSBuild">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\..\Infrastructure\KingMetalTemplateProject.Infrastructure.Database\KingMetalTemplateProject.Infrastructure.Database.csproj" />
+		<ProjectReference Include="..\KingMetalTemplateProject.Domain.Interfaces\KingMetalTemplateProject.Domain.Interfaces.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Folder Include="Grain\" />
+		<Folder Include="Handler\" />
+		<Folder Include="Observers\" />
+		<Folder Include="State\" />
+	</ItemGroup>
+
+</Project>
