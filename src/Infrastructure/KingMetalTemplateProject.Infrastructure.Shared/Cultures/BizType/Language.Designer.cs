@@ -39,7 +39,7 @@ namespace KingMetalTemplateProject.Infrastructure.Shared.Cultures.BizType {
         public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("KingMetalTemplateProject.Infrastructure.Shared.BizType.Language", typeof(Language).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("KingMetalTemplateProject.Infrastructure.Shared.Cultures.BizType.Language", typeof(Language).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,92 +61,11 @@ namespace KingMetalTemplateProject.Infrastructure.Shared.Cultures.BizType {
         }
         
         /// <summary>
-        ///   查找类似 CapitalAccount 的本地化字符串。
+        ///   查找类似 Default 的本地化字符串。
         /// </summary>
-        public static string CapitalAccount {
+        public static string Default {
             get {
-                return ResourceManager.GetString("CapitalAccount", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   查找类似 PaymentOrder 的本地化字符串。
-        /// </summary>
-        public static string PaymentOrder {
-            get {
-                return ResourceManager.GetString("PaymentOrder", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   查找类似 ProfitOrder 的本地化字符串。
-        /// </summary>
-        public static string ProfitOrder {
-            get {
-                return ResourceManager.GetString("ProfitOrder", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   查找类似 PromotionChannel 的本地化字符串。
-        /// </summary>
-        public static string PromotionChannel {
-            get {
-                return ResourceManager.GetString("PromotionChannel", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   查找类似 PromotionCompany 的本地化字符串。
-        /// </summary>
-        public static string PromotionCompany {
-            get {
-                return ResourceManager.GetString("PromotionCompany", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   查找类似 PromotionMerchant 的本地化字符串。
-        /// </summary>
-        public static string PromotionMerchant {
-            get {
-                return ResourceManager.GetString("PromotionMerchant", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   查找类似 ReceivePaymentOrder 的本地化字符串。
-        /// </summary>
-        public static string ReceivePaymentOrder {
-            get {
-                return ResourceManager.GetString("ReceivePaymentOrder", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   查找类似 RevenueConfig 的本地化字符串。
-        /// </summary>
-        public static string RevenueConfig {
-            get {
-                return ResourceManager.GetString("RevenueConfig", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   查找类似 Reversal 的本地化字符串。
-        /// </summary>
-        public static string Reversal {
-            get {
-                return ResourceManager.GetString("Reversal", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   查找类似 WithdrawalOrder 的本地化字符串。
-        /// </summary>
-        public static string WithdrawalOrder {
-            get {
-                return ResourceManager.GetString("WithdrawalOrder", resourceCulture);
+                return ResourceManager.GetString("Default", resourceCulture);
             }
         }
     }

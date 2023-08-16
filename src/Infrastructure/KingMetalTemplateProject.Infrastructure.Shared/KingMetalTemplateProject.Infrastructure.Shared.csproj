@@ -18,4 +18,21 @@
 	  <Folder Include="Enumerations\" />
 	  <Folder Include="Options\" />
 	</ItemGroup>
+
+	
+	<ItemGroup>
+	  <Compile Update="Cultures\BizType\Language.Designer.cs">
+	    <DesignTime>True</DesignTime>
+	    <AutoGen>True</AutoGen>
+	    <DependentUpon>Language.resx</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
+	
+	<ItemGroup>
+	  <EmbeddedResource Update="Cultures\BizType\Language.resx">
+	    <Generator>PublicResXFileCodeGenerator</Generator>
+	    <LastGenOutput>Language.Designer.cs</LastGenOutput>
+	  </EmbeddedResource>
+	</ItemGroup>
 </Project>
