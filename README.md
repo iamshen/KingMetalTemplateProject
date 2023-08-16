@@ -3,7 +3,7 @@
 ### Installation via dotnet new template
 
 ```bash
-dotnet new -i KingMetal.Orleans.Solution.Template::1.0.8
+dotnet new -i KingMetal.Orleans.Solution.Template
 ```
 
 ### Create new project:
