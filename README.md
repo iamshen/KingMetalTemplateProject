@@ -3,26 +3,42 @@
 ### Installation via dotnet new template
 
 ```bash
-dotnet new -i KingMetal.Orleans.Solution.Template::1.0.x
+dotnet new -i KingMetal.Orleans.Solution.Template::1.0.8
 ```
 
 ### Create new project:
 
+new solution
+
 ```bash
-dotnet new king-sln --name "HsCrm" --dbTPrefix "hc_" --appName "crm" --connectionString "Your ConnectionString"
+dotnet new kingmetal --name "Crm"
 ```
 
-Project template options:
+options:
 
 ```bash
 --name: [string value] for project name
---dbTPrefix: [string value] The prefix of DataBase table(for example: [gi_]).
---connectionString: [string value] The ConnectionString of DataBase.
---appName: [string value] The short name of application(for example: [crm|order|cart...]).
 ```
 
-### Running in Visual Studio
 
-- Set Startup projects:
-  - xxx.Presentation.Host
-  - xxx.Presentation.Api
+### Initialization SQL
+
+[See](src/Infrastructure/KingMetalTemplateProject.Infrastructure.Database/SQL/README.md)
+
+### Running
+
+> Current Target Framework Version is `net7.0`
+
+#### Set Startup projects:
+
+Orleans Silo 
+
+`KingMetalTemplateProject.Presentation.Host`
+
+Olreans Client
+
+`KingMetalTemplateProject.Presentation.Api`
+
+### Configure
+
+[See](Config.md)

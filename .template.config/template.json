@@ -1,15 +1,15 @@
 {
-  "$schema": "http://json.schemastore.org/template",
-  "author": "huangs",
+  "$schema": "https://json.schemastore.org/template",
+  "author": "Nobody",
   "classifications": [
     "Olreans",
     "KingMetal"
   ],
-  "name": "Olreans Project",
+  "name": "Olreans KingMetal Project",
   "description": "This is a Olreans Template Project From KingMetal.",
   "identity": "Olreans.KingMetal.Solution.CSharp",
   "groupIdentity": "Olreans.KingMetal.Solution",
-  "shortName": "king-sln",
+  "shortName": "kingmetal",
   "tags": {
     "language": "C#",
     "type": "project"
@@ -36,26 +36,23 @@
     }
   ],
   "symbols": {
-    "dbTPrefix": {
-      "type": "parameter",
-      "replaces": "TempDbTablePrefix",
-      "isRequired": true,
-      "description": "The prefix of DataBase table(for example: “gi_”)."
-    },
     "connectionString": {
       "type": "parameter",
       "replaces": "TempConnectionString",
-      "isRequired": true,
+      "isRequired": false,
       "description": "The ConnectionString of DataBase."
     },
     "appName": {
       "type": "parameter",
       "replaces": "TempAppName",
-      "isRequired": true,
+      "isRequired": false,
       "description": "The short name of application(for example: “crm、order、cart...”)."
     }
   },
   "primaryOutputs": [
+    {
+      "path": "src/Application/KingMetalTemplateProject.Application/KingMetalTemplateProject.Application.csproj"
+    },
     {
       "path": "src/Domain/KingMetalTemplateProject.Domain/KingMetalTemplateProject.Domain.csproj"
     },
@@ -66,7 +63,7 @@
       "path": "src/Infrastructure/KingMetalTemplateProject.Infrastructure.Database/KingMetalTemplateProject.Infrastructure.Database.csproj"
     },
     {
-      "path": "src/Infrastructure/KingMetalTemplateProject.Infrastructure.Domain/KingMetalTemplateProject.Infrastructure.Domain.csproj"
+      "path": "src/Infrastructure/KingMetalTemplateProject.Infrastructure.HttpService/KingMetalTemplateProject.Infrastructure.HttpService.csproj"
     },
     {
       "path": "src/Infrastructure/KingMetalTemplateProject.Infrastructure.Shared/KingMetalTemplateProject.Infrastructure.Shared.csproj"
@@ -76,6 +73,12 @@
     },
     {
       "path": "src/Presentation/KingMetalTemplateProject.Presentation.Host/KingMetalTemplateProject.Presentation.Host.csproj"
+    },
+    {
+      "path": "tests/KingMetalTemplateProject.Infrastructure.DatabaseTests/KingMetalTemplateProject.Infrastructure.DatabaseTests.csproj"
+    },
+    {
+      "path": "tests/KingMetalTemplateProject.PresentationTests/KingMetalTemplateProject.PresentationTests.csproj"
     }
   ],
   "postActions": [

@@ -14,8 +14,8 @@
 		<NeutralLanguage>zh-CHS</NeutralLanguage>
 		<PackageLicenseExpression> MIT </PackageLicenseExpression>
 		<PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
-		<PackageProjectUrl>https://github.com/iamshen/Hs.TemplateProject</PackageProjectUrl>
-		<PackageReleaseNotes>https://github.com/iamshen/Hs.TemplateProject/blob/master/CHANGELOG.md</PackageReleaseNotes>
+		<PackageProjectUrl>https://github.com/iamshen/KingMetalTemplateProject</PackageProjectUrl>
+		<PackageReleaseNotes>https://github.com/iamshen/KingMetalTemplateProject/blob/master/CHANGELOG.md</PackageReleaseNotes>
 		<GenerateDocumentationFile>true</GenerateDocumentationFile>
 		
 	</PropertyGroup>

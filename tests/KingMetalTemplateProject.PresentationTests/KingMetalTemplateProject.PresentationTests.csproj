@@ -1,0 +1,61 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <IsPackable>false</IsPackable>
+        <IsTestProject>true</IsTestProject>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Bogus" />
+        <PackageReference Include="GoldCloud.Infrastructure.Configuration"/>
+        <PackageReference Include="GoldCloud.Infrastructure.HostExtensions"/>
+        <PackageReference Include="KingMetal.Infrastructures.NLog"/>
+        <PackageReference Include="KingMetal.Infrastructures.NLogKingMetalRenderer"/>
+        <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" />
+        <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets"/>
+        <PackageReference Include="Microsoft.Orleans.CodeGenerator.MSBuild">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+        <PackageReference Include="KingMetal.Domains.AuditingService"/>
+        <PackageReference Include="KingMetal.Domains.Abstractions"/>
+        <PackageReference Include="KingMetal.MessageBus.RabbitMQ"/>
+        <PackageReference Include="KingMetal.Storage.PostgreSQL"/>
+        <PackageReference Include="KingMetal.Domains.UniqueIdService"/>
+        <PackageReference Include="KingMetal.Domains.UniqueValueService"/>
+        <PackageReference Include="KingMetal.Domains.TransactionService"/>
+        <PackageReference Include="Microsoft.Extensions.Hosting"/>
+        <PackageReference Include="Microsoft.Extensions.Http"/>
+        <PackageReference Include="Microsoft.Orleans.OrleansRuntime"/>
+        <PackageReference Include="Microsoft.Orleans.OrleansTelemetryConsumers.Counters"/>
+        <PackageReference Include="OrleansDashboard"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.5.0"/>
+        <PackageReference Include="Microsoft.Orleans.TestingHost"/>
+        <PackageReference Include="xunit" Version="2.4.2"/>
+        <PackageReference Include="xunit.runner.visualstudio" Version="2.4.5">
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+            <PrivateAssets>all</PrivateAssets>
+        </PackageReference>
+        <PackageReference Include="coverlet.collector" Version="3.2.0">
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+            <PrivateAssets>all</PrivateAssets>
+        </PackageReference>
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Update="appsettings.json">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </None>
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\src\Application\KingMetalTemplateProject.Application\KingMetalTemplateProject.Application.csproj" />
+      <ProjectReference Include="..\..\src\Domain\KingMetalTemplateProject.Domain\KingMetalTemplateProject.Domain.csproj" />
+      <ProjectReference Include="..\..\src\Infrastructure\KingMetalTemplateProject.Infrastructure.Database\KingMetalTemplateProject.Infrastructure.Database.csproj" />
+      <ProjectReference Include="..\..\src\Infrastructure\KingMetalTemplateProject.Infrastructure.HttpService\KingMetalTemplateProject.Infrastructure.HttpService.csproj" />
+    </ItemGroup>
+
+</Project>

@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
 	<metadata>
-
 		<id>KingMetal.Orleans.Solution.Template</id>
-		<version>1.0.5</version>
+		<version>1.0.7</version>
 		<title>KingMetal Solution Template for Orleans.</title>
 		<copyright>Copyright 2023: huangs. All right Reserved</copyright>
 		<authors>Huangs</authors>
-		<description>KingMetal Solution Template for Orleans.</description>
+		<description>
+			KingMetal Solution Template for Orleans.
+			See https://github.com/iamshen/KingMetalTemplateProject/blob/master/README.md
+		</description>
 		<summary>
 			This is a solution template for creating a Orleans Server with ASP.NET Core 7 and KingMetal .
 		</summary>
-		<releaseNotes>CHANGELOG.md</releaseNotes>
-
-		<projectUrl>https://github.com/iamshen/Hs.TemplateProject</projectUrl>
-		<repository type="git" url="https://github.com/iamshen/Hs.TemplateProject.git" branch="master" />
+		<releaseNotes>https://github.com/iamshen/KingMetalTemplateProject/blob/master/CHANGELOG.md</releaseNotes>
+		<projectUrl>https://github.com/iamshen/KingMetalTemplateProject</projectUrl>
+		<repository type="git" url="https://github.com/iamshen/KingMetalTemplateProject.git" branch="master" />
 
 		<license type="expression">MIT</license>
 		<requireLicenseAcceptance>false</requireLicenseAcceptance>
 		<tags>orleans project template csharp dotnet kingMetal</tags>
 		<icon>icon.png</icon>
 		<readme>README.md</readme>
-
 		<packageTypes>
 			<packageType name="Template" />
 		</packageTypes>
@@ -31,6 +31,7 @@
 	<files>
 		<file src=".template.config\icon.png" />
 		<file src="README.md" />
+		<file src="CHANGELOG.md" />
 		<file src=".\**" target="content" exclude="**\bin\**;**\obj\**;**\.vs\**;**\.vscode\**;**\wwwroot\dist\**;content\Directory.Build.*;**\.git\**;**\.github\**;**\CODE_OF_CONDUCT.md;**\LICENSE;" />
 	</files>
 
