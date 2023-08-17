@@ -44,4 +44,4 @@ Orleans Client
 
 ### Configure
 
-[See](Config.md)
+[See](CONFIG.md)

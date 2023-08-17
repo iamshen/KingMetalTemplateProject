@@ -11,7 +11,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		Directory.Packages.props = Directory.Packages.props
 		README.md = README.md
 		Version.props = Version.props
-		Config.md = Config.md
+		CONFIG.md = CONFIG.md
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{DC0B6508-AF16-4284-B6FA-AA1F4FB6E828}"

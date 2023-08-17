@@ -46,7 +46,7 @@ Copy-Item ./KingMetalTemplateProject.sln.DotSettings $contentDirectory -recurse 
 Copy-Item ./LICENSE.md $contentDirectory -recurse -force
 Copy-Item ./CHANGELOG.md $contentDirectory -recurse -force
 Copy-Item ./README.md $contentDirectory -recurse -force
-Copy-Item ./Config.md $contentDirectory -recurse -force
+Copy-Item ./CONFIG.md $contentDirectory -recurse -force
 
 # Copy nuspec
 Write-Output "Copy KingMetal.Template.nuspec..."
