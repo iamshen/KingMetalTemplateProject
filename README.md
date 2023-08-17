@@ -35,7 +35,7 @@ Orleans Silo
 
 `KingMetalTemplateProject.Presentation.Host`
 
-Olreans Client
+Orleans Client
 
 `KingMetalTemplateProject.Presentation.Api`
 
