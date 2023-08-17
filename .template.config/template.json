@@ -2,13 +2,13 @@
   "$schema": "https://json.schemastore.org/template",
   "author": "Nobody",
   "classifications": [
-    "Olreans",
+    "Orleans",
     "KingMetal"
   ],
-  "name": "Olreans KingMetal Project",
-  "description": "This is a Olreans Template Project From KingMetal.",
-  "identity": "Olreans.KingMetal.Solution.CSharp",
-  "groupIdentity": "Olreans.KingMetal.Solution",
+  "name": "Orleans KingMetal Project",
+  "description": "This is a Orleans Template Project From KingMetal.",
+  "identity": "Orleans.KingMetal.Solution.CSharp",
+  "groupIdentity": "Orleans.KingMetal.Solution",
   "shortName": "kingmetal",
   "tags": {
     "language": "C#",
@@ -45,7 +45,7 @@
       "type": "parameter",
       "replaces": "TempAppName",
       "isRequired": false,
-      "description": "The short name of application(for example: “crm、order、cart...”)."
+      "description": "The short name of application(for example: “crm、order、cart、shipping...”)."
     }
   },
   "primaryOutputs": [
