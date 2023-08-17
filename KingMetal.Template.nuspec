@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
 	<metadata>
 		<id>KingMetal.Orleans.Solution.Template</id>
-		<version>1.0.9</version>
+		<version>1.0.10</version>
 		<title>KingMetal Solution Template for Orleans.</title>
 		<copyright>Copyright 2023: huangs. All right Reserved</copyright>
 		<authors>Huangs</authors>
