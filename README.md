@@ -3,7 +3,10 @@
 ### Installation via dotnet new template
 
 ```bash
-dotnet new -i KingMetal.Orleans.Solution.Template
+# 安装/更新
+dotnet new install KingMetal.Orleans.Solution.Template
+# 卸载
+dotnet new uninstall KingMetal.Orleans.Solution.Template
 ```
 
 ### Create new project:
