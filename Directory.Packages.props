@@ -3,7 +3,6 @@
         <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
     </PropertyGroup>
     <ItemGroup>
-        <PackageVersion Include="Microsoft.SourceLink.GitHub" Version="1.1.1" PrivateAssets="All"/>
         <PackageVersion Include="Ardalis.GuardClauses" Version="4.1.1"/>
         <PackageVersion Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="11.0.0"/>
         <PackageVersion Include="Bogus" Version="34.0.2"/>
