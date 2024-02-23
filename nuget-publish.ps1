@@ -1,4 +1,4 @@
-# �������
+# 定义参数
 Param(
     # Nuget APIKey
     [string] $apikey
@@ -6,8 +6,47 @@ Param(
 
 if ($apikey -eq $null -or $apikey -eq "")
 {
-    $apikey = "oy2crbz2sevvkqqzmpdaf42yv4e2uyzujpd4xi3nwl2dwm";
+    $apikey = "oy2pnvkm65mbvsjoeggq53n5b4ryc6qepgps7omnvxk3eq";
 }
+
+# 加载 .nuspec 文件
+[xml]$nuspec = Get-Content -Path "KingMetal.Template.nuspec"
+
+# 从 .nuspec 文件中读取当前版本号
+$currentVersion = $nuspec.package.metadata.version
+$versionParts = $currentVersion.Split('.')
+
+# 提取 major, minor, build 和 revision 部分
+$major = $versionParts[0]
+$minor = $versionParts[1]
+$build = $versionParts[2]
+$revision = [int]$versionParts[3]
+
+# 计算新的 build 号，以 2024年1月1日为起点
+$startDate = Get-Date "2024-01-01"
+$today = Get-Date
+$newBuild = ($today - $startDate).Days
+
+# 如果 build 号发生变化，重置 revision 为 0，否则自增 revision
+if ($newBuild -ne $build) {
+    $build = $newBuild
+    $revision = 0
+} else {
+    $revision++
+}
+
+# 组合新的版本号
+$newVersion = "$major.$minor.$build.$revision"
+# 更新 .nuspec 文件中的 version 节点
+$nuspec.package.metadata.version = $newVersion
+# 读取 CHANGELOG.md 文件内容，使用 UTF-8 编码
+$releaseNotes = Get-Content -Path "CHANGELOG.md" -Raw -Encoding UTF8
+# 更新 releaseNotes 节点
+$nuspec.package.metadata.releaseNotes = $releaseNotes
+# 保存更改后的 .nuspec 文件
+$nuspec.Save("KingMetal.Template.nuspec")
+
+# 接下来，打包 NuGet 包
 
 $templateName = "templates"
 $templateSrc =     "./$templateName/content/src"
@@ -76,4 +115,4 @@ Write-Output "finish publish $project_nupkg to nuget.org...";
 
 Remove-Item $project_nupkg -Force -recurse
 
-Write-Warning "�����ɹ�";
+Write-Warning "发布成功";

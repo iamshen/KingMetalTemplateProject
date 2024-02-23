@@ -1,7 +1,7 @@
 ﻿using System.Runtime.CompilerServices;
 using System.Security.Claims;
-using GoldCloud.Infrastructure.Common.Exception;
-using GoldCloud.Infrastructure.Common.ValueObjects;
+using Golden.Infrastructure.Common.Exception;
+using Golden.Infrastructure.Common.ValueObjects;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Primitives;
 

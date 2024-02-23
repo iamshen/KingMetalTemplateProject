@@ -7,7 +7,7 @@
 		<PackageReference Include="FluentValidation.DependencyInjectionExtensions" />
 		<PackageReference Include="SkiaSharp.QrCode" />
 		<PackageReference Include="SkiaSharp.NativeAssets.Linux.NoDependencies" />
-		<PackageReference Include="GoldCloud.Infrastructure.Common" />
+		<PackageReference Include="Golden.Infrastructure.Common" />
 		<PackageReference Include="Microsoft.Extensions.Hosting" />
 	</ItemGroup>
 

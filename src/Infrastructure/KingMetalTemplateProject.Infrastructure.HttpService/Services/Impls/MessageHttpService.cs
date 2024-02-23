@@ -1,4 +1,4 @@
-﻿using GoldCloud.Infrastructure.Common.Enumerations;
+﻿using Golden.Infrastructure.Common.Enumerations;
 using KingMetalTemplateProject.Infrastructure.HttpService.Apis;
 using KingMetalTemplateProject.Infrastructure.HttpService.Dtos;
 using KingMetalTemplateProject.Infrastructure.HttpService.Dtos.Message;

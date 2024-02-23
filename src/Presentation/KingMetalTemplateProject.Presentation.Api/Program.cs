@@ -1,5 +1,4 @@
-using GoldCloud.Presentation.WebBase.Extensions;
-using Microsoft.Extensions.Configuration;
+using Golden.Presentation.WebBase.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 

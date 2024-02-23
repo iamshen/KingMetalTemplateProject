@@ -52,7 +52,7 @@ public class TestClientConfigurator : IClientBuilderConfigurator
             services.AddHttpContextAccessor();
             services.AddAppApiServices();
             services.AddAppDataConnection(Configuration);
-            services.AddAppHttpClient(Configuration);
+            services.AddAppHttpClients(Configuration);
         });
     }
 }
@@ -136,7 +136,7 @@ public class TestSiloConfigurator : ISiloConfigurator
             services.Configure<RemoteApiConfigOptions>(Configuration.GetSection(nameof(RemoteApiConfigOptions)));
             services.AddSingleton(Configuration);
             services.AddAppDataConnection(Configuration);
-            services.AddAppHttpClient(Configuration);
+            services.AddAppHttpClients(Configuration);
         });
         siloBuilder.ConfigureLogging((hostContext, loggerBuilder) =>
         {

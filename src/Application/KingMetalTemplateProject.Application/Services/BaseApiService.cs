@@ -1,6 +1,6 @@
 ﻿using System.Runtime.CompilerServices;
 using AutoMapper;
-using GoldCloud.Infrastructure.Common.ValueObjects;
+using Golden.Infrastructure.Common.ValueObjects;
 using KingMetalTemplateProject.Infrastructure.Shared.Repository;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;

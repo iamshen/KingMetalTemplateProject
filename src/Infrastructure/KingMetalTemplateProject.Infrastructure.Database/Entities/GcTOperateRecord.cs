@@ -1,5 +1,5 @@
-﻿using GoldCloud.Infrastructure.Common.ValueObjects;
-using GoldCloud.Infrastructure.LinqToDb.Converter;
+﻿using Golden.Infrastructure.Common.ValueObjects;
+using Golden.Infrastructure.LinqToDb.Converter;
 using KingMetalTemplateProject.Infrastructure.Shared.Enumerations;
 using KingMetalTemplateProject.Infrastructure.Shared.Repository;
 using LinqToDB;

@@ -5,7 +5,7 @@
 	</ItemGroup>
 	
 	<ItemGroup>
-		<PackageReference Include="GoldCloud.Infrastructure.WebBase" />
+		<PackageReference Include="Golden.Infrastructure.WebBase" />
 	</ItemGroup>
 
 	<ItemGroup>

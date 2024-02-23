@@ -7,8 +7,8 @@
 
     <ItemGroup>
         <PackageReference Include="Bogus" />
-        <PackageReference Include="GoldCloud.Infrastructure.Configuration"/>
-        <PackageReference Include="GoldCloud.Infrastructure.HostExtensions"/>
+        <PackageReference Include="Golden.Infrastructure.Configuration"/>
+        <PackageReference Include="Golden.Infrastructure.HostExtensions"/>
         <PackageReference Include="KingMetal.Infrastructures.NLog"/>
         <PackageReference Include="KingMetal.Infrastructures.NLogKingMetalRenderer"/>
         <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" />

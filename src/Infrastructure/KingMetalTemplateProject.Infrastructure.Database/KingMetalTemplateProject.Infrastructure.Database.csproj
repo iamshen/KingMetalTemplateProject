@@ -3,7 +3,7 @@
 	<ItemGroup>
 		<PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" />
 		<PackageReference Include="KingMetal.Infrastructures.Common" />
-		<PackageReference Include="GoldCloud.Infrastructure.LinqToDb" />
+		<PackageReference Include="Golden.Infrastructure.LinqToDb" />
 		<PackageReference Include="linq2db.AspNet" />
 		<PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" />
 		<PackageReference Include="Microsoft.Extensions.Configuration.Binder" />

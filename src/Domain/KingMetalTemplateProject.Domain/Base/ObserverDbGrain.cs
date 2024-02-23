@@ -100,18 +100,6 @@ public abstract class ObserverDbGrain : ObserverGrain<long>
             @event.GetDefaultName(), eventMetadata.EventId, ex.Message);
     }
 
-    /// <summary>
-    ///     打印错误日志
-    /// </summary>
-    /// <param name="ex"></param>
-    /// <param name="eventId"></param>
-    /// <param name="eventName"></param>
-    protected virtual void LogError(Exception ex, string eventId, string eventName)
-    {
-        Logger.LogError(ex, "{EventName} Fail; EventId:{EventId}. Message: {ExMessage}", eventName, eventId,
-            ex.Message);
-    }
-
     #endregion 打印错误日志
 
     #region 打印信息日志
@@ -125,16 +113,6 @@ public abstract class ObserverDbGrain : ObserverGrain<long>
     {
         Logger.LogInformation("{DefaultName} Success; EventId:{EventMetadataEventId}", @event.GetDefaultName(),
             eventMetadata.EventId);
-    }
-
-    /// <summary>
-    ///     打印信息日志
-    /// </summary>
-    /// <param name="eventId"></param>
-    /// <param name="eventName"></param>
-    protected virtual void LogInfo(string eventId, string eventName)
-    {
-        Logger.LogInformation("{EventName} Success; EventId:{EventId}", eventName, eventId);
     }
 
     #endregion 打印信息日志

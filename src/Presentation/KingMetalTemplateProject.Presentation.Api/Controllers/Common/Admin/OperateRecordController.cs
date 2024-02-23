@@ -3,8 +3,8 @@
 //  <last-date>2022-09-16 15:36</last-date>
 // -----------------------------------------------------------------------
 
-using GoldCloud.Infrastructure.Common.ValueObjects;
-using GoldCloud.Infrastructure.WebBase.Controllers.V1;
+using Golden.Infrastructure.Common.ValueObjects;
+using Golden.Infrastructure.WebBase.Controllers.V1;
 using KingMetalTemplateProject.Domain.Interfaces.Services;
 using KingMetalTemplateProject.Infrastructure.Shared.Dtos.OperatorRecord;
 using Microsoft.AspNetCore.Mvc;

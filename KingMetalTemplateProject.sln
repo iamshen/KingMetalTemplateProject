@@ -7,11 +7,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 	ProjectSection(SolutionItems) = preProject
 		CHANGELOG.md = CHANGELOG.md
 		Common.props = Common.props
+		CONFIG.md = CONFIG.md
 		Directory.Build.props = Directory.Build.props
 		Directory.Packages.props = Directory.Packages.props
+		KingMetal.Template.nuspec = KingMetal.Template.nuspec
+		nuget-publish.ps1 = nuget-publish.ps1
 		README.md = README.md
 		Version.props = Version.props
-		CONFIG.md = CONFIG.md
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{DC0B6508-AF16-4284-B6FA-AA1F4FB6E828}"
@@ -38,13 +40,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KingMetalTemplateProject.Pr
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{E36950A9-7BCC-44DD-A6F8-07162F54E60C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KingMetalTemplateProject.Application", "src\Application\KingMetalTemplateProject.Application\KingMetalTemplateProject.Application.csproj", "{26B3CA66-0496-4608-8856-1248B6E6905B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KingMetalTemplateProject.Application", "src\Application\KingMetalTemplateProject.Application\KingMetalTemplateProject.Application.csproj", "{26B3CA66-0496-4608-8856-1248B6E6905B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KingMetalTemplateProject.Infrastructure.HttpService", "src\Infrastructure\KingMetalTemplateProject.Infrastructure.HttpService\KingMetalTemplateProject.Infrastructure.HttpService.csproj", "{1640D79D-91C6-413B-8FF2-4A196A48EB23}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KingMetalTemplateProject.Infrastructure.HttpService", "src\Infrastructure\KingMetalTemplateProject.Infrastructure.HttpService\KingMetalTemplateProject.Infrastructure.HttpService.csproj", "{1640D79D-91C6-413B-8FF2-4A196A48EB23}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KingMetalTemplateProject.Infrastructure.DatabaseTests", "tests\KingMetalTemplateProject.Infrastructure.DatabaseTests\KingMetalTemplateProject.Infrastructure.DatabaseTests.csproj", "{FECBD7B8-3CD1-4C56-8C89-0B794D49091E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KingMetalTemplateProject.Infrastructure.DatabaseTests", "tests\KingMetalTemplateProject.Infrastructure.DatabaseTests\KingMetalTemplateProject.Infrastructure.DatabaseTests.csproj", "{FECBD7B8-3CD1-4C56-8C89-0B794D49091E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KingMetalTemplateProject.PresentationTests", "tests\KingMetalTemplateProject.PresentationTests\KingMetalTemplateProject.PresentationTests.csproj", "{8CC7F3E0-1241-4830-B5A0-76BB85B1D12F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KingMetalTemplateProject.PresentationTests", "tests\KingMetalTemplateProject.PresentationTests\KingMetalTemplateProject.PresentationTests.csproj", "{8CC7F3E0-1241-4830-B5A0-76BB85B1D12F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

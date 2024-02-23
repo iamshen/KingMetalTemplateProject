@@ -1,6 +1,6 @@
 ﻿using System.Globalization;
-using GoldCloud.Infrastructure.Common.Options;
-using GoldCloud.Infrastructure.HostExtensions.Extensions;
+using Golden.Infrastructure.Common.Options;
+using Golden.Infrastructure.HostExtensions.Extensions;
 using KingMetal.Domains.UniqueValueService.Grains;
 using KingMetalTemplateProject.Infrastructure.Database.Extensions;
 using Microsoft.AspNetCore.Mvc;
@@ -10,8 +10,6 @@ using Microsoft.Extensions.Hosting;
 using Orleans;
 using Orleans.Hosting;
 using Orleans.Streams;
-
-namespace GoldCloud.Presentation.PromotionHost;
 
 internal class Program
 {
@@ -53,7 +51,7 @@ internal class Program
                         services.Configure<RemoteApiConfigOptions>(section);
                         services.AddSingleton(context.Configuration);
                         services.AddAppDataConnection(context.Configuration);
-                        services.AddAppHttpClient(context.Configuration);
+                        services.AddAppHttpClients(context.Configuration);
                     })
                     ;
             })
@@ -61,6 +59,7 @@ internal class Program
             .UseApplicationStarted()
             .UseApplicationStopped()
             .UseSafeStopSlioHost()
+            .ConfigurationNLogApplicationName()
             .RunAsync();
     }
 

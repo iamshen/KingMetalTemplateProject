@@ -1,4 +1,4 @@
-﻿using GoldCloud.Infrastructure.Common.ValueObjects;
+﻿using Golden.Infrastructure.Common.ValueObjects;
 using KingMetalTemplateProject.Domain.Interfaces.Services;
 using KingMetalTemplateProject.Infrastructure.Database;
 using KingMetalTemplateProject.Infrastructure.Shared.Dtos.OperatorRecord;

@@ -9,8 +9,8 @@ global using Microsoft.Extensions.DependencyInjection;
 global using Microsoft.Extensions.Hosting;
 
 // GoldCloud.Infrastructure
-global using GoldCloud.Infrastructure.WebBase.Extensions;
-global using GoldCloud.Infrastructure.Common.Options;
+global using Golden.Infrastructure.WebBase.Extensions;
+global using Golden.Infrastructure.Common.Options;
 
 // KingMetalTemplateProject
 global using KingMetalTemplateProject.Infrastructure.Database.Extensions;

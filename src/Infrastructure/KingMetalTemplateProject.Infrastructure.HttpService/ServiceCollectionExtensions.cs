@@ -1,5 +1,5 @@
 ﻿using Ardalis.GuardClauses;
-using GoldCloud.Infrastructure.Common.Options;
+using Golden.Infrastructure.Common.Options;
 using HttpTracer;
 using KingMetalTemplateProject.Infrastructure.HttpService.Apis;
 using KingMetalTemplateProject.Infrastructure.HttpService.Services;
@@ -12,7 +12,7 @@ namespace Microsoft.Extensions.DependencyInjection;
 public static class ServiceCollectionExtensions
 {
     /// <summary> Add Application HttpClient  </summary>
-    public static void AddAppHttpClient(this IServiceCollection services, IConfiguration configuration)
+    public static void AddAppHttpClients(this IServiceCollection services, IConfiguration configuration)
     {
         #region Configure
 

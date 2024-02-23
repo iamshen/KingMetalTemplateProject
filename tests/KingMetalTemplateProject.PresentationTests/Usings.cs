@@ -9,7 +9,7 @@ global using Xunit;
 global using System.Globalization;
 
 // Infrastructure
-global using GoldCloud.Infrastructure.Common.Options;
+global using Golden.Infrastructure.Common.Options;
 
 // Microsoft
 global using Microsoft.AspNetCore.Mvc;

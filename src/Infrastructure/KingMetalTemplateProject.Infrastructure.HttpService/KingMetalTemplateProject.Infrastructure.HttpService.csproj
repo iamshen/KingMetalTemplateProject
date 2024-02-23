@@ -13,7 +13,4 @@
     <ItemGroup>
       <ProjectReference Include="..\KingMetalTemplateProject.Infrastructure.Shared\KingMetalTemplateProject.Infrastructure.Shared.csproj" />
     </ItemGroup>
-    <ItemGroup>
-      <PackageVersion Update="Microsoft.Extensions.Hosting.Abstractions" Version="7.0.0" />
-    </ItemGroup>
 </Project>

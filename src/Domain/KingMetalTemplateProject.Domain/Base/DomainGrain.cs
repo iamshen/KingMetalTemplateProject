@@ -1,5 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
-using GoldCloud.Infrastructure.Common.Exception;
+using Golden.Infrastructure.Common.Exception;
 using KingMetal.Domains.Abstractions.Command;
 using KingMetal.Domains.Abstractions.Exceptions;
 using KingMetal.Domains.Abstractions.State;

@@ -18,6 +18,6 @@ public static class ServiceCollectionExtensions
         webApplicationBuilder.Services.AddHttpContextAccessor();
         webApplicationBuilder.Services.AddAppApiServices();
         webApplicationBuilder.Services.AddAppDataConnection(webApplicationBuilder.Configuration);
-        webApplicationBuilder.Services.AddAppHttpClient(webApplicationBuilder.Configuration);
+        webApplicationBuilder.Services.AddAppHttpClients(webApplicationBuilder.Configuration);
     }
 }

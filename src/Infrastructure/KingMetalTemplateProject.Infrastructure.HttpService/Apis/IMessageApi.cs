@@ -1,4 +1,4 @@
-﻿using GoldCloud.Infrastructure.Common.ValueObjects;
+﻿using Golden.Infrastructure.Common.ValueObjects;
 using KingMetalTemplateProject.Infrastructure.HttpService.Dtos.Message;
 using Refit;
 
