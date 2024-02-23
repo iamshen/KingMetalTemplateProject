@@ -1,5 +1,8 @@
 # KingMetal Project Template
 
+[![Nuget](https://img.shields.io/nuget/v/KingMetal.Orleans.Solution.Template?label=NuGet)](https://www.nuget.org/packages/KingMetal.Orleans.Solution.Template)
+[![Nuget](https://img.shields.io/nuget/dt/KingMetal.Orleans.Solution.Template?label=Downloads)](https://www.nuget.org/packages/KingMetal.Orleans.Solution.Template)
+
 ### Installation via dotnet new template
 
 ```bash

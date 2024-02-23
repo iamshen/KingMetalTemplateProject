@@ -22,7 +22,7 @@ public class YourApiServiceTests
     public async Task CreateYourAsync()
     {
         var id = await _cluster.GrainFactory.NewIntegerIdAsync();
-        Assert.True(id > 0);
+        Assert.True(id < 0);
         // Sample
         // var service = _cluster.ServiceProvider.GetRequiredService<IYourApiService>();
         // var (name, account) = GenerateHelper.GenerateCompanyName();
@@ -51,7 +51,7 @@ public class YourApiServiceTests
         // var state = await _cluster.GrainFactory.GetGrain<IYourGrain>(result.Id.CastTo<long>()).GetState() as YourState;
         // Assert.NotNull(state);
         
-        Assert.True(true);
+        Assert.True(false);
 
         await Task.CompletedTask;
     }
