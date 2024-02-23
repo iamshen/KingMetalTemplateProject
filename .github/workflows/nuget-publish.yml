@@ -42,12 +42,12 @@ jobs:
           git config --global user.email 'github-actions@github.com'
           git add .
           git commit -m "Bump version [skip ci]"
-          git push
-          
+          git push https://${{ secrets.GH_TOKEN }}@github.com/iamshen/KingMetalTemplateProject.git master
+    
       - name: Tag new version
         run: |
           $version = [System.Xml.XmlDocument](Get-Content KingMetal.Template.nuspec).GetElementsByTagName('version')[0].InnerText
           git tag "v$version"
-          git push origin "v$version"
+          git push https://${{ secrets.GH_TOKEN }}@github.com/iamshen/KingMetalTemplateProject.git "v$version"
         shell: pwsh
 
