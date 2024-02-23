@@ -19,7 +19,7 @@ jobs:
       - name: Set up .NET
         uses: actions/setup-dotnet@v3
         with:
-          dotnet-version: '8.0.x'
+          dotnet-version: "8.0.x"
 
       - name: Restore dependencies
         run: dotnet restore
@@ -31,10 +31,8 @@ jobs:
         run: dotnet test --no-restore --filter FullyQualifiedName\!~DatabaseTests --verbosity normal
 
       - name: Publish to NuGet
-        run: .\nuget-publish.ps1
+        run: .\nuget-publish.ps1 -ApiKey ${{ secrets.NUGET_API_KEY }}
         shell: pwsh
-        env:
-          NUGET_API_KEY: ${{ secrets.NUGET_API_KEY }}
 
       - name: Commit version bump
         run: |
@@ -43,11 +41,10 @@ jobs:
           git add .
           git commit -m "Bump version [skip ci]"
           git push https://${{ secrets.GH_TOKEN }}@github.com/iamshen/KingMetalTemplateProject.git master
-    
+
       - name: Tag new version
         run: |
           $version = [System.Xml.XmlDocument](Get-Content KingMetal.Template.nuspec).GetElementsByTagName('version')[0].InnerText
           git tag "v$version"
           git push https://${{ secrets.GH_TOKEN }}@github.com/iamshen/KingMetalTemplateProject.git "v$version"
         shell: pwsh
-

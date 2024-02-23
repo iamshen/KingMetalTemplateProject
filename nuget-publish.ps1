@@ -6,7 +6,8 @@ Param(
 
 if ($apikey -eq $null -or $apikey -eq "")
 {
-    $apikey = "oy2pnvkm65mbvsjoeggq53n5b4ryc6qepgps7omnvxk3eq";
+    # 请从配置中读取
+    $apikey = "xxx"; 
 }
 
 # 加载 .nuspec 文件
