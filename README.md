@@ -1,5 +1,6 @@
 # KingMetal Project Template
 
+[![Build](https://github.com/iamshen/KingMetalTemplateProject/actions/workflows/nuget-publish.yml/badge.svg)](https://github.com/iamshen/KingMetalTemplateProject/actions/workflows/nuget-publish.yml)
 [![Nuget](https://img.shields.io/nuget/v/KingMetal.Orleans.Solution.Template?label=NuGet)](https://www.nuget.org/packages/KingMetal.Orleans.Solution.Template)
 [![Nuget](https://img.shields.io/nuget/dt/KingMetal.Orleans.Solution.Template?label=Downloads)](https://www.nuget.org/packages/KingMetal.Orleans.Solution.Template)
 

@@ -44,7 +44,9 @@ jobs:
 
       - name: Tag new version
         run: |
-          $version = [System.Xml.XmlDocument](Get-Content KingMetal.Template.nuspec).GetElementsByTagName('version')[0].InnerText
+          $xml = New-Object System.Xml.XmlDocument
+          $xml.LoadXml((Get-Content KingMetal.Template.nuspec))
+          $version = $xml.GetElementsByTagName('version')[0].InnerText
           git tag "v$version"
           git push https://${{ secrets.GH_TOKEN }}@github.com/iamshen/KingMetalTemplateProject.git "v$version"
         shell: pwsh
