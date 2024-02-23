@@ -1,0 +1,53 @@
+name: Publish to NuGet
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  publish:
+    runs-on: windows-latest
+
+    steps:
+      - uses: actions/checkout@v3
+        name: Checkout code
+        with:
+          # 允许后续步骤推送提交
+          persist-credentials: true
+
+      - name: Set up .NET
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '8.0.x'
+
+      - name: Restore dependencies
+        run: dotnet restore
+
+      - name: Build
+        run: dotnet build --configuration Release --no-restore
+
+      - name: Test
+        run: dotnet test --no-restore --filter FullyQualifiedName\!~DatabaseTests --verbosity normal
+
+      - name: Publish to NuGet
+        run: .\nuget-publish.ps1
+        shell: pwsh
+        env:
+          NUGET_API_KEY: ${{ secrets.NUGET_API_KEY }}
+
+      - name: Commit version bump
+        run: |
+          git config --global user.name 'github-actions'
+          git config --global user.email 'github-actions@github.com'
+          git add .
+          git commit -m "Bump version [skip ci]"
+          git push
+          
+      - name: Tag new version
+        run: |
+          $version = [System.Xml.XmlDocument](Get-Content KingMetal.Template.nuspec).GetElementsByTagName('version')[0].InnerText
+          git tag "v$version"
+          git push origin "v$version"
+        shell: pwsh
+
