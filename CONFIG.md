@@ -278,11 +278,11 @@
     },
  
     "MiniprogramOptions": {
-        "AppId": "wxe3ceed38cec88e52",
-        "AppSecret": "79c3df4fa5bbf08c6cb0580358362ad6",
+        "AppId": "xxx",
+        "AppSecret": "xxx",
         "ProgramState": "formal",
         // 订阅消息模板ID1 -回收订单状态变更通知
-        "TemplateId1": "efXNtebMePAjpI9HIT30shxT-2et0gCst6G_i0adUbY",
+        "TemplateId1": "xxx",
         // 订阅消息模板ID1的跳转页面
         "TemplateId1Page": "/pages/order/info/info?id={0}&orderState=3",
         // 订阅消息模板ID1的参数
@@ -297,7 +297,7 @@
             "RemarkKey": "thing8"
         },
         // 订阅消息模板ID2 -回收订单黄金检测完成通知
-        "TemplateId2": "9YNAdy4Ux1Bnm6s9nnO-7IU-9MOr5lUAFSbU9_M5Tsk",
+        "TemplateId2": "xxx",
         // 订阅消息模板ID2的跳转页面
         "TemplateId2Page": "/pages/order/info/info?id={0}&orderState=3",
         // 订阅消息模板ID1的参数
@@ -312,7 +312,7 @@
             "RemarkKey": "thing7"
         },
         // 小程序注册Url
-        "RegisterPage": "https://reverse.dunhuanggold.com/?mp=mz&de=mp&fn=cn&ut=2&da={0}"
+        "RegisterPage": "https://www.yourApi.com/?mp=mz&de=mp&fn=cn&ut=2&da={0}"
     },
 
     "RemoteApiConfigOptions": {
